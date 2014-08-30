@@ -1,0 +1,81 @@
+<!-- Google Maps -->
+<div id="googlemaps" class="google-map"></div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-5">
+
+      <div class="featured-box featured-box-primary map-overlay">
+        <div class="box-content">
+          <h4 class="appear-animation" data-appear-animation="fadeInLeft">Contactate con <strong>InfoPrisma</strong></h4>
+          <ul class="list-unstyled">
+            <li class="appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300"><span class="icon-rounded"><i class="icon icon-map-marker"></i></span> <strong>Dirección:</strong> calle 1234, San Isidro, Buenos Aires</li>
+            <li class="appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600"><span class="icon-rounded"><i class="icon icon-phone"></i></span> <strong>Teléfono:</strong> 11-5465-0775</li>
+            <li class="appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="900"><span class="icon-rounded"><i class="icon icon-envelope"></i></span> <strong>Email:</strong> <a href="mailto:infoprisma@gmail.com">infoprisma@gmail.com</a></li>
+          </ul>
+
+          <hr class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1200" />
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="alert alert-success hidden" id="contactSuccess">
+        <strong>Success!</strong> Your message has been sent to us.
+      </div>
+
+      <div class="alert alert-danger hidden" id="contactError">
+        <strong>Error!</strong> There was an error sending your message.
+      </div>
+
+      <h2 class="short"><strong>Contactanos</strong></h2>
+      <form action="" id="contactForm" type="post">
+        <div class="row">
+          <div class="form-group">
+            <div class="col-md-6">
+              <label>Tu nombre *</label>
+              <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
+            </div>
+            <div class="col-md-6">
+              <label>Tu email *</label>
+              <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="col-md-12">
+              <label>Asunto</label>
+              <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="col-md-12">
+              <label>Tu mensaje *</label>
+              <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="submit" value="Enviar" class="btn btn-primary btn-lg" data-loading-text="Loading...">
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  contact();
+</script>

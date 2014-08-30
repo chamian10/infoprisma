@@ -1,0 +1,32 @@
+<div class="container text-center">
+
+  <h1 class="text-center">InfoPrisma</h1><br/>
+  <% if current_user %>
+
+      <h2>Bienvenido <%= current_user.name %>! </h2><br/>
+
+      <h2> Noticia Caliente del día</h2>
+
+      <h2> Titulos de las noticias de hoy</h2>
+
+
+      <% @news.each do |i| %>
+
+            <p><%= i.title %></p>
+
+      <% end %>
+
+      <div id="fb-root"></div>
+      <!-- required by facebook -->
+      <%= link_to 'Compartir en Facebook', 'InfoPrisma', :class => "fb_share btn" %>
+      <%= facebook_share_once %>
+
+  <% else %>
+      <h2>NO ESTAS LOGEADO</h2>
+
+      <a href="<%= users_path %>" class="btn-primary">IR AL REGISTRARTE/INGRESAR</a> <br/>
+      <%= link_to 'Salir', destroy_user_session_path, :method => :delete %>
+
+  <% end %>
+
+</div>

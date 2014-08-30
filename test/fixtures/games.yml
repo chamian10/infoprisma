@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  level: 1
+  date: 2014-05-29
+  id_news: MyString
+  id_sport: MyString
+  id_show: MyString
+
+two:
+  name: MyString
+  level: 1
+  date: 2014-05-29
+  id_news: MyString
+  id_sport: MyString
+  id_show: MyString
